@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
     background-color: #f1f1f1;
@@ -8,31 +9,57 @@ body {
 }
 
 .wrapper {
-    width: 1200px;
     display: flex;
-    margin: 0 auto;
-    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh;
 }
 .main {
     display: flex;
     flex-flow: column;
-    width: 85%;
+    width: 100%;
 }
 .menu {
-    width: 15%;
-    background-color: aqua;
-    padding: 10px 20px 0px;
+    min-width: 150;
+    max-width: 280;
+    background-color: rgb(201, 0, 117);
+    padding: 10px 0px 0px;
+}
+.menu ul {
+    padding: 0;
+}
+.menu li {
+    list-style: none;
+    padding: 16px 24px;
+}
+.menu li:hover {
+    background-color: #ffffff3f;
+}
+.menu a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
 }
 .header {
-    background-color: rgb(5, 108, 108);
+    background-image: url(https://segurosinteligentes.com.br/oldrh/wp-content/uploads/o-que-%C3%A9-sa%C3%BAde-mental.jpg);
+    background-position: center;
+    background-size: cover;
     min-height: 150px;
+    height: 360px;
+    max-height: 360px;
+
 }
 .content {
     background-color: white;
     min-height: 300px;
     padding: 20px;
+    flex-grow: 1;
 }
 .footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
+    background-color: rgb(7, 175, 226);
+    min-height: 50px;
+    max-height: 50px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
